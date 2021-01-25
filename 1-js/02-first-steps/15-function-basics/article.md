@@ -270,7 +270,7 @@ function checkAge(age) {
 */!*
   } else {
 *!*
-    return confirm('А родители разрешили?');
+    return false;
 */!*
   }
 }
@@ -280,6 +280,7 @@ let age = prompt('Сколько вам лет?', 18);
 if ( checkAge(age) ) {
   alert( 'Доступ получен' );
 } else {
+  alert('А родители разрешили?');
   alert( 'Доступ закрыт' );
 }
 ```
